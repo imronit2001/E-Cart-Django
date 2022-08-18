@@ -4,8 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("We are at Home")
-    #return render(request, 'shop/index.html')
+    return render(request, 'shop/index.html')
 
 def about(request):
     return HttpResponse("We are at about")
