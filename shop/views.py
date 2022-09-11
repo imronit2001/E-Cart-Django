@@ -11,7 +11,7 @@ def index(request):
 
 
 def productView(request):
-    return render(request, 'product.html', {'products': Product.objects.all()})
+    return render(request, 'shop/product.html', {'products': Product.objects.all()})
 
 
 def about(request):
