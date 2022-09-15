@@ -15,7 +15,7 @@
   .col-md-3 img {
 
     width: 170px;
-    height: 200px;
+    height: 00px;
   }
 
   body .carousel-indicator li {
@@ -126,5 +126,7 @@
     localStorage.setItem('cart', JSON.stringify(cart));
     document.getElementById('cart').innerHTML = Object.keys(cart).length;
   });
+  $('#popcart').popover();
+  document.getElementById("popcart").setAttribute('data-content', '<h5>Cart for your items in my shopping cart</h5>');
 </script>
 {% endblock %}
